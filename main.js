@@ -25,7 +25,7 @@ const showMessage = function() {
  console.log("wywołałem funkcję showMessage")
 }
 
-// showMessage()
+showMessage()
 
 // taka funkcja bez nazwy określana jest funkcją anonimową.
 
@@ -36,19 +36,19 @@ const showMessage = function() {
 // Szkielet funkcji 
 // function nazwaFunkcjiCoRobi(){} 
 
-function addNumbers(x, y) {
- return x + y;
-}
+// function addNumbers(x, y) {
+//  return x + y;
+// }
 
-addNumbers(2, 4);
+// addNumbers(2, 4);
 
 // Plusem (minusem, zależy jak patrzeć) jest to, że taka funkcja (dzięki hoistingowi) jest możliwa do uruchomienia nawet przed deklaracją.
 
 // showCourseName();
 
-function showCourseName() {
- console.log("Programowanie w JS");
-}
+// function showCourseName() {
+//  console.log("Programowanie w JS");
+// }
 
 
 // 3. KONSTRUKTOR (Function Constructor)
@@ -56,7 +56,7 @@ function showCourseName() {
 // Szkielet funkcji 
 // const nazwaFunkcjiCoRobi = new Function(); 
 
-const textAlert = new Function("text", "alert(text);");
+// const textAlert = new Function("text", "alert(text);");
 
 // textAlert('działa!')
 
@@ -79,7 +79,7 @@ const textAlert = new Function("text", "alert(text);");
 // Główna zaleta na teraz - krótsza
 // Szczególnie użyteczna dla prostych zadań
 
-const showMeTextMyArrowFunction = (text) => { console.log(text) };
+// const showMeTextMyArrowFunction = (text) => { console.log(text) };
 
 // showMeTextMyArrowFunction("hejjjj!");
 
@@ -111,17 +111,17 @@ const showNewCourse = showCourseName;
 
 // Przykład 1 - Funkcja która wpływa na program (efekt uboczny) nic nie zwraca (formalnie zwraca undefined)
 
-const divideBy2 = function(number) {
- console.log(number / 2);
-}
+// const divideBy2 = function(number) {
+//  console.log(number / 2);
+// }
 
 // const result1 = divideBy2(10);
 
-let number = 0
-const add = function() {
- number++;
- console.log(number);
-}
+// let number = 0
+// const add = function() {
+//  number++;
+//  console.log(number);
+// }
 
 // Przykład 2 - Funkcja, która tylko przetwarza dane (bez efektu ubocznego) i zwraca wartość
 const divideBy3 = function(number) {
@@ -132,11 +132,11 @@ const result2 = divideBy3(20);
 
 // Przykład 3 - Funkcja z efektem ubocznym i zwracająca wartość
 
-const divideBy5 = function(number) {
- const result = number / 5
- console.log(result);
- return result;
-}
+// const divideBy5 = function(number) {
+//  const result = number / 5
+//  console.log(result);
+//  return result;
+// }
 
 const result3 = divideBy5(26);
 
@@ -145,15 +145,15 @@ const result3 = divideBy5(26);
 // Parametr element składowy funkcji na etapie jej tworzenia. Nie trzeba ich umieszczać (funkcja nie musi mieć parametrów)
 
 // Bez paramtru
-const showMyName = function() {
- console.log("Bartek");
-}
+// const showMyName = function() {
+//  console.log("Bartek");
+// }
 
 // Z parametrem
 // Parametr - pojecie używane dla określenie nazwy użytej przy tworzeniu funkcji
-const showUserName = function(userName) {
- console.log("witaj " + userName);
-}
+// const showUserName = function(userName) {
+//  console.log("witaj " + userName);
+// }
 
 // Argument - pojęcie użyte przy wywołaniu funkcji.
 showUserName("Franciszek");
