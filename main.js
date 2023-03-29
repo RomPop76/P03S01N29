@@ -36,11 +36,11 @@ showMessage()
 // Szkielet funkcji 
 // function nazwaFunkcjiCoRobi(){} 
 
-// function addNumbers(x, y) {
-//  return x + y;
-// }
+function addNumbers(x, y) {
+ return x + y;
+}
 
-// addNumbers(2, 4);
+addNumbers(2, 4);
 
 // Plusem (minusem, zależy jak patrzeć) jest to, że taka funkcja (dzięki hoistingowi) jest możliwa do uruchomienia nawet przed deklaracją.
 
@@ -79,9 +79,9 @@ showMessage()
 // Główna zaleta na teraz - krótsza
 // Szczególnie użyteczna dla prostych zadań
 
-// const showMeTextMyArrowFunction = (text) => { console.log(text) };
+const showMeTextMyArrowFunction = (text) => { console.log(text) };
 
-// showMeTextMyArrowFunction("hejjjj!");
+showMeTextMyArrowFunction("hejjjj!");
 
 
 /* ---------------------------------------- */
@@ -90,7 +90,7 @@ showMessage()
 // Funkcje są obiektami a więc działają jak inne obiekty jeśli chodzi o przypisanie (czyli przypisujemy referencje, obiekt jest ciągle jeden).
 
 const showNewCourse = showCourseName;
-// showCourseName();
+showCourseName();
 // to jest dokładnie ta sama funkcja (nie jej kopia)
 
 /* ---------------------------------------- */
@@ -111,11 +111,11 @@ const showNewCourse = showCourseName;
 
 // Przykład 1 - Funkcja która wpływa na program (efekt uboczny) nic nie zwraca (formalnie zwraca undefined)
 
-// const divideBy2 = function(number) {
-//  console.log(number / 2);
-// }
+const divideBy2 = function(number) {
+ console.log(number / 2);
+}
 
-// const result1 = divideBy2(10);
+const result1 = divideBy2(10);
 
 // let number = 0
 // const add = function() {
